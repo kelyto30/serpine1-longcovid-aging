@@ -5,7 +5,7 @@ Reproducible R analysis pipeline for the manuscript:
 > **Peripheral SERPINE1/PAI-1 Elevation in Long COVID Converges with NF-κB Activation in COVID-19 Postmortem Brain: A Cross-Compartment Transcriptomic Biomarker of Cognitive Aging**  
 > Kelechi Wisdom Elechi · Gabriel A. de Erausquin  
 > Glenn Biggs Institute for Alzheimer's & Neurodegenerative Diseases · UT Health San Antonio · Barshop Institute  
-> *Submitted to Frontiers in Aging Neuroscience*
+> 
 
 ---
 
