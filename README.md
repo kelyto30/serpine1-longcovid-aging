@@ -127,7 +127,7 @@ Tested with R ≥ 4.3.0. GSVA ≥ 1.50.0 uses the `gsvaParam()` API (Bioc 3.18+)
 
 If you use this code, please cite:
 
-> Elechi KW, de Erausquin GA. Peripheral SERPINE1/PAI-1 Elevation in Long COVID Converges with NF-κB Activation in COVID-19 Postmortem Brain: A Cross-Compartment Transcriptomic Biomarker of Cognitive Aging. *Frontiers in Aging Neuroscience* (submitted 2026).
+> Elechi KW, de Erausquin GA. Peripheral SERPINE1/PAI-1 Elevation in Long COVID Converges with NF-κB Activation in COVID-19 Postmortem Brain: A Cross-Compartment Transcriptomic Biomarker of Cognitive Aging.
 
 ---
 
