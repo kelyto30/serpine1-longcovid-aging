@@ -69,7 +69,7 @@ Only 2 genes (OR7D2, ALAS2) reach padj < 0.05 in the transcriptome-wide pre-comp
 
 ## Software
 
-R 4.3.2 (macOS). Bioconductor: GEOquery 2.70, GSVA 1.50 (versions as recorded at analysis time; `sessionInfo()` output to be added). CRAN: readxl, dplyr, tidyr, ggplot2 3.5, ggrepel, ggbeeswarm, patchwork, pheatmap, RColorBrewer, viridis, scales.
+R 4.3.2 (macOS 12.7.6). Bioconductor: GEOquery 2.70.0, GSVA 1.50.5, org.Hs.eg.db 3.18.0. CRAN: readxl 1.4.5, dplyr 1.1.4, tidyr 1.3.1, ggplot2 3.5.2, ggrepel 0.9.6, ggbeeswarm 0.7.2, patchwork 1.3.1, pheatmap 1.0.13, RColorBrewer 1.1-3, viridis 0.6.5, scales 1.4.0. Full `sessionInfo()` from the verification run (6 Nov 2026), which reproduced all reported results: [`docs/sessionInfo.txt`](docs/sessionInfo.txt).
 
 ```r
 install.packages(c("readxl","dplyr","tidyr","ggplot2","ggrepel","ggbeeswarm",
