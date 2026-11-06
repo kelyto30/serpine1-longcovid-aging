@@ -11,10 +11,12 @@
 #   3. SERPINE1 in the transcriptome-wide pre-computed DESeq2 results
 #   4. Sensitivity: SERPINE1 / SASP-RELA panel with outlier GSM7027490 included
 #   5. Sensitivity: co-enrichment correlation with Spearman's rho
+#   6. Supplementary Figure S1: Immunosenescence Panel vs SASP Core scatter
 # INPUT:  data/*.rds from scripts 01-04
 # OUTPUT: results/integration/effect_sizes_all_tests.csv
 #         results/integration/sensitivity_outlier_included.csv
 #         results/integration/sensitivity_summary.txt
+#         results/integration/figS1_coenrichment_sasp_core.png/.pdf
 # =============================================================================
 
 suppressPackageStartupMessages({ library(dplyr) })
@@ -104,6 +106,33 @@ write.csv(sens, "results/integration/sensitivity_outlier_included.csv", row.name
 sp <- cor.test(coenrich_df$ImmunoSen, coenrich_df$SASP_Core,
                method = "spearman", exact = FALSE)
 pe <- cor.test(coenrich_df$ImmunoSen, coenrich_df$SASP_Core, method = "pearson")
+
+# ── 6. Supplementary Figure S1: Immunosenescence Panel vs SASP Core ─────────
+# (Script 03's fig11 plots ImmunoSen vs SenMayo; this plots the SASP Core pair
+#  whose correlation, r = -0.337, is reported in the text.)
+suppressPackageStartupMessages({ library(ggplot2) })
+grp_cols <- c("Non_LongCOVID" = "#2196F3", "LongCOVID" = "#F44336")
+cd <- coenrich_df
+if (!"group" %in% colnames(cd))
+  cd$group <- col_clean$group[match(cd$sample_id, col_clean$sample_id)]
+p_s1 <- ggplot(cd, aes(x = ImmunoSen, y = SASP_Core, colour = group)) +
+  geom_point(size = 3.5, alpha = 0.85) +
+  geom_smooth(aes(group = 1), method = "lm", formula = y ~ x, se = TRUE,
+              colour = "black", linetype = "dashed", linewidth = 0.8) +
+  scale_colour_manual(values = grp_cols, name = "Group") +
+  annotate("text", x = -Inf, y = Inf, hjust = -0.1, vjust = 1.5,
+           label = sprintf("Pearson r = %.3f, p = %.3f\nSpearman rho = %.3f, p = %.3f",
+                           pe$estimate, pe$p.value, sp$estimate, sp$p.value)) +
+  labs(title = "Co-Enrichment: Immunosenescence Panel vs SASP Core",
+       subtitle = "GSE224615 | all 35 samples",
+       x = "Immunosenescence Panel Score (GSVA)",
+       y = "SASP Core Score (GSVA)") +
+  theme_classic(base_size = 11) +
+  theme(plot.title = element_text(face = "bold"))
+ggsave("results/integration/figS1_coenrichment_sasp_core.png", p_s1,
+       width = 7, height = 5.5, dpi = 300)
+ggsave("results/integration/figS1_coenrichment_sasp_core.pdf", p_s1,
+       width = 7, height = 5.5)
 
 # ── Summary for the manuscript ───────────────────────────────────────────────
 s1  <- es[es$feature == "SERPINE1", ]
