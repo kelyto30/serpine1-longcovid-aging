@@ -5,7 +5,7 @@
 R analysis code for the manuscript (in preparation):
 
 > **Peripheral SERPINE1/PAI-1 Elevation in Long COVID Converges with NF-κB Activation in COVID-19 Postmortem Brain: A Cross-Compartment Transcriptomic Biomarker of Cognitive Aging**
-> Kelechi Wisdom Elechi · Gabriel A. de Erausquin
+> Kelechi Wisdom Elechi
 > Glenn Biggs Institute for Alzheimer's & Neurodegenerative Diseases · UT Health San Antonio · Barshop Institute
 
 ---
@@ -81,7 +81,7 @@ BiocManager::install(c("GEOquery","GSVA","org.Hs.eg.db"))
 
 ## Citation
 
-> Elechi KW, de Erausquin GA (2026). *SERPINE1 Long COVID Aging Analysis Pipeline*. Zenodo. https://doi.org/10.5281/zenodo.23997978
+> Elechi KW (2026). *SERPINE1 Long COVID Aging Analysis Pipeline*. Zenodo. https://doi.org/10.5281/zenodo.23997978
 
 ## Contact
 

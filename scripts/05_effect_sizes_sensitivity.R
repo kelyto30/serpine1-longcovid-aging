@@ -2,7 +2,7 @@
 # Script 05: Effect sizes and sensitivity analyses  [new in v1.1.0]
 # Project: Peripheral SERPINE1/PAI-1 Elevation in Long COVID Converges with
 #          NF-kB Activation in COVID-19 Postmortem Brain
-# Author:  Kelechi Wisdom Elechi | PI: Gabriel A. de Erausquin
+# Author:  Kelechi Wisdom Elechi
 # -----------------------------------------------------------------------------
 # Adds reporting only; it does not change any result from scripts 01-04.
 #   1. Rank-biserial correlation (r_rb) for every Wilcoxon comparison
