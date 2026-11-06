@@ -1,6 +1,6 @@
 # SERPINE1/PAI-1 as a Cross-Compartment Biomarker of Long COVID–Associated Cognitive Aging
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23754758.svg)](https://doi.org/10.5281/zenodo.23754758)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23997978.svg)](https://doi.org/10.5281/zenodo.23997978)
 
 R analysis code for the manuscript (in preparation):
 
@@ -81,7 +81,7 @@ BiocManager::install(c("GEOquery","GSVA","org.Hs.eg.db"))
 
 ## Citation
 
-> Elechi KW, de Erausquin GA (2026). *SERPINE1 Long COVID Aging Analysis Pipeline*. Zenodo. https://doi.org/10.5281/zenodo.23754758
+> Elechi KW, de Erausquin GA (2026). *SERPINE1 Long COVID Aging Analysis Pipeline*. Zenodo. https://doi.org/10.5281/zenodo.23997978
 
 ## Contact
 
