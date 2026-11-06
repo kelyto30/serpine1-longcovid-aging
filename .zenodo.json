@@ -1,0 +1,19 @@
+{
+  "title": "SERPINE1 Long COVID Aging Analysis Pipeline",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Elechi, Kelechi Wisdom",
+      "affiliation": "UT Health San Antonio / Barshop Institute"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Long COVID",
+    "SERPINE1",
+    "PAI-1",
+    "senescence",
+    "GSVA",
+    "transcriptomics"
+  ]
+}

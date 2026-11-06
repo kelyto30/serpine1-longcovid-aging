@@ -2,7 +2,7 @@
 # Script 04: SERPINE1 blood-brain bridge, STAT1 comparison, SASP/RELA blood panel, master table
 # Project: Peripheral SERPINE1/PAI-1 Elevation in Long COVID Converges with
 #          NF-kB Activation in COVID-19 Postmortem Brain
-# Author:  Kelechi Wisdom Elechi | PI: Gabriel A. de Erausquin
+# Author:  Kelechi Wisdom Elechi
 #          UT Health San Antonio / Barshop Institute
 # -----------------------------------------------------------------------------
 # PROVENANCE: The code below is the code that was executed to produce the
